@@ -1,0 +1,53 @@
+@import "https://designmodo.github.io/Flat-UI/dist/css/flat-ui.min.css";
+
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css";
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+body,
+html {
+  height: 100%;
+  background-color: #583e7e;
+}
+
+/* SOME DEMO STYLES - NOT REQUIRED */
+body,
+html {
+  background-color: #4286f4;
+}
+body h1,
+body h2,
+body h3,
+body h4 {
+  color: rgba(255, 255, 255, 0.9);
+}
+body p,
+body blockquote {
+  color: rgba(255, 255, 255, 0.7);
+}
+body a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: underline;
+}
+body a:hover {
+  color: #000;
+}
+
+.main-container{
+  margin: 200px;
+}
+
+.page-header{
+  font-size: 45px;
+}
+
+.lead{
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.destaque{
+  font-weight: bold;
+}
