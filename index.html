@@ -9,7 +9,7 @@
 	
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Your Website</title>
+	<title>VRML</title>
 </head>
 
 <body>
@@ -24,12 +24,12 @@
                     </p>
                     <ul>
                     	<li><a href="#resumo">Resumo</a></li>
-                    	<li>Introdução</li>
-                    	<li>Modelagem 3D</li>
-                    	<li>VRML</li>
-                    	<li>Experimentos realizados</li>
-                    	<li>Conclusões</li>
-                    	<li>Bibliografia</li>
+                    	<li><a href="#introducao">Introdução</a></li>
+                    	<li><a href="#modelagem">Modelagem 3D</a></li>
+                    	<li><a href="#VRML">VRML</a></li>
+                    	<li><a href="#experimentos">Experimentos realizados</a></li>
+                    	<li><a href="#conclusoes">Conclusões</a></li>
+                    	<li><a href="#bibliografia">Bibliografia</a></li>
                     </ul>
 
                     <div id="resumo">
@@ -48,6 +48,8 @@
 
                     <div id="modelagem">
                     	<h4>Modelagem 3D</h4>
+			    <p>De um modo geral, um modelo 3D representa um desenho que é feito em três dimensões, ou seja, apresenta largura (L), profundidade (P) e altura (H). Os meios mais comuns de criação de um modelo 3D é de pegar um simples objeto, chamado de primitivo, e estender ou fazê-lo crescer em uma forma que pode ser refinada e detalhada. </p>
+			    <p>Os modelos mais comuns de modelagem são: modelagem spline ou patch, box modeling, Modelagem Poly / Edge Extrusion.</p>
                     </div>
 
                     <div id="VRML">
@@ -119,21 +121,58 @@ Material {
 								</pre>
                     		</li>
                     		<li>Requisitos para rodar</li>
+				<p>Para rodar os programas VRML, é preciso baixar um navegador especial chamado Cosmo Player 2.0 </p>
                     		<li>Padrões</li>
                     	</ul>
                     </div>
                     <div id="Abordagem">
-                    	<h4>Abordagem BCC ou LC</h4>
+                    	<h4>Abordagem LC</h4>
+			    <p>Apesar do proposito do VRML ter uma base mais educativa, o mercado de trabalho para essa técnologia é introdutório, sendo que com o passar do tempo essa tecnologia foi sendo deixada apenas para aprendizado.</p>
                     </div>
                     <div id="Experimentos">
                     	<h4>Experimentos realizados</h4>
+			    <p>O código a seguir mostra um cone amarelo</p>
+<pre>
+<code>
+#VRML V2.0 utf8
+#-----------------------------------------------------------------------------
+# yellowcone.wrl
+#
+# A really simple VRML world consisting of a yellow cone lit from above.
+#-----------------------------------------------------------------------------
+
+# A directional light source, shining down from above.
+
+DirectionalLight {
+  direction 0 -1 0
+}
+
+# A yellow cone rotated about 57 degrees from vertical.
+
+Transform {
+  rotation 0 0 -1 1
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {diffuseColor 1 1 0}
+      }
+      geometry Cone {
+        bottomRadius 2 
+        height 8.1
+      }
+    }
+  ]
+}
+</code>
+</pre>
                     </div>
                     <div id="Conclusões">
                     	<h4>Conclusões</h4>
+			    <p>Podemos concluir que o VRML tem propositos educativos.</p>
                     </div>
                     <div id="Bibliografia">
                     	<h4>Bibliografia</h4>
-                    	<p>UNIJUÍ  Universidade Regional do Noroeste do Estado do Rio Grande do Sul. Tutorial VRML 2.0 - Marcos Carrard</p>
+                    	<p>UNIJUÍ Universidade Regional do Noroeste do Estado do Rio Grande do Sul. Tutorial VRML 2.0 - Marcos Carrard</p>
                     	<p>https://www.inf.pucrs.br/manssour/VRML/ConceitosImportantes.html</p>
                     	<p>https://www.techopedia.com/definition/4808/virtual-reality-modeling-language-vrml</p>
                     	<p>http://www.dca.fee.unicamp.br/sibgrapi99/vrml/Aula1/aula1.html</p>
