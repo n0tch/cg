@@ -131,41 +131,8 @@ Material {
                     </div>
                     <div id="Experimentos">
                     	<h4>Experimentos realizados</h4>
+			    <p>O exemplo abaixo foi realizando utilizando o programa Cortona 3D. </p>
 			    <img src="./imagem.png"/>
-			    <p>O código a seguir mostra um cone amarelo</p>
-<pre>
-<code>
-#VRML V2.0 utf8
-#-----------------------------------------------------------------------------
-# yellowcone.wrl
-#
-# A really simple VRML world consisting of a yellow cone lit from above.
-#-----------------------------------------------------------------------------
-
-# A directional light source, shining down from above.
-
-DirectionalLight {
-  direction 0 -1 0
-}
-
-# A yellow cone rotated about 57 degrees from vertical.
-
-Transform {
-  rotation 0 0 -1 1
-  children [
-    Shape {
-      appearance Appearance {
-        material Material {diffuseColor 1 1 0}
-      }
-      geometry Cone {
-        bottomRadius 2 
-        height 8.1
-      }
-    }
-  ]
-}
-</code>
-</pre>
                     </div>
                     <div id="conclusões">
                     	<h4>Conclusões</h4>
